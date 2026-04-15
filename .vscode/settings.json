@@ -1,0 +1,14 @@
+{
+  "files.readonlyInclude": {
+    "old_src/**": true
+  },
+  "python.analysis.exclude": [
+    "old_src/**"
+  ],
+  "search.exclude": {
+    "old_src/**": true
+  },
+  "files.watcherExclude": {
+    "**/old_src/**": true
+  }
+}
