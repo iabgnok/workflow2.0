@@ -1,0 +1,7 @@
+{
+  "meta_main_workflow": {
+    "path": "agent/workflows/meta/main_workflow.step.md",
+    "description": "元工作流主编排：Planner -> Designer -> Evaluator",
+    "version": "2.0"
+  }
+}

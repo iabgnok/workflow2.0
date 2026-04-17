@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openspec init *)",
+      "Bash(openspec instructions *)",
+      "Bash(openspec list *)",
+      "Bash(openspec status *)",
+      "Bash(xargs grep *)",
+      "Bash(python -c \"import pydantic_settings; print\\('ok'\\)\")",
+      "Bash(python -m pytest new_src/tests/skills/test_llm_agent_spec.py -v)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, 'new_src'\\); from agent.engine.protocol.models import WorkflowModel; print\\('OK'\\)\")",
+      "Bash(grep -cv '^\\\\s*$' /e/项目/Workflow2.0/new_src/agent/engine/runner.py)",
+      "Bash(python -m pytest new_src/tests/engine/ -v --tb=short)",
+      "Bash(cp -r \"E:/项目/Workflow2.0/openspec/changes/engine-core-refactor/specs/engine-hooks\" \"E:/项目/Workflow2.0/openspec/specs/\")",
+      "Bash(cp -r \"E:/项目/Workflow2.0/openspec/changes/engine-core-refactor/specs/engine-condition-eval\" \"E:/项目/Workflow2.0/openspec/specs/\")",
+      "Bash(cp -r \"E:/项目/Workflow2.0/openspec/changes/engine-core-refactor/specs/engine-step-executor\" \"E:/项目/Workflow2.0/openspec/specs/\")",
+      "Bash(cp -r \"E:/项目/Workflow2.0/openspec/changes/engine-core-refactor/specs/engine-resume\" \"E:/项目/Workflow2.0/openspec/specs/\")",
+      "Bash(cp -r \"E:/项目/Workflow2.0/openspec/changes/engine-core-refactor/specs/engine-observer\" \"E:/项目/Workflow2.0/openspec/specs/\")",
+      "Read(//e/項目/Workflow2.0/new_src/agent/engine/protocol/**)",
+      "Bash(python -m pytest new_src/tests/skills/ -v --tb=short)",
+      "Bash(python -c ' *)",
+      "Bash(mkdir -p openspec/specs/skill-base-class openspec/specs/skill-llm-agents openspec/specs/skill-io-agents openspec/specs/skill-flow-agents)",
+      "Bash(cp openspec/changes/skills-reorganization/specs/skill-base-class/spec.md openspec/specs/skill-base-class/spec.md)",
+      "Bash(cp openspec/changes/skills-reorganization/specs/skill-llm-agents/spec.md openspec/specs/skill-llm-agents/spec.md)",
+      "Bash(cp openspec/changes/skills-reorganization/specs/skill-io-agents/spec.md openspec/specs/skill-io-agents/spec.md)",
+      "Bash(cp openspec/changes/skills-reorganization/specs/skill-flow-agents/spec.md openspec/specs/skill-flow-agents/spec.md)",
+      "Bash(python -m pytest tests/infra/ -v --tb=short)",
+      "Bash(python -m pytest --tb=short -q)",
+      "Bash(python -c \"import agent.engine.parser as m; print\\(dir\\(m\\)\\)\")",
+      "Bash(python -c \"import agent.engine.protocol.gatekeeper as m; print\\([x for x in dir\\(m\\) if not x.startswith\\('_'\\)]\\)\")",
+      "Bash(python -c \"import agent.engine.protocol.normalizer as m; print\\([x for x in dir\\(m\\) if not x.startswith\\('_'\\)]\\)\")",
+      "Bash(python -m pytest new_src/tests/orchestration/ -v --tb=short)",
+      "Bash(uv sync *)",
+      "Bash(python -c \"from config.settings import settings; print\\('OK'\\); print\\('context_window_tokens:', settings.context_window_tokens\\); print\\('context_soft_ratio:', settings.context_soft_ratio\\); print\\('default_workflow_inputs:', settings.default_workflow_inputs\\)\")",
+      "Bash(python -m pytest tests/config/test_settings.py -v)",
+      "Bash(python -m pytest new_src/tests/ --co -q)",
+      "Bash(python -m pytest new_src/tests/ -q --tb=no)",
+      "Bash(python -m pytest new_src/tests/skills/test_llm_agent_spec.py::TestPromptsRootPathJoining::test_default_prompts_root_points_to_new_src_prompts -v)",
+      "Bash(openspec new *)",
+      "Bash(python -m pytest tests/e2e/ -m e2e -v)",
+      "Bash(python -c \"from dotenv import load_dotenv; import os; load_dotenv\\('../.env', override=True\\); print\\('DEEPSEEK_API_KEY:', 'SET' if os.environ.get\\('DEEPSEEK_API_KEY'\\) else 'NOT SET'\\)\")"
+    ],
+    "additionalDirectories": [
+      "e:\\项目\\Workflow2.0\\new_src\\agent\\workflows"
+    ]
+  }
+}

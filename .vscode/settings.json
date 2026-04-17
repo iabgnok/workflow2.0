@@ -10,5 +10,8 @@
   },
   "files.watcherExclude": {
     "**/old_src/**": true
-  }
+  },
+  "cursorpyright.analysis.exclude": [
+    "old_src/**"
+  ]
 }
